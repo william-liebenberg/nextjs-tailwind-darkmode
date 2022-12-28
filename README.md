@@ -41,7 +41,7 @@ Follow the steps below to scaffold a basic `Next.js v13` application, add & conf
 
 7. Add the following to the `content` node in `tailwind.config.js`:
 
-    ```json
+    ```tsx
     content: [
         "./app/**/*.{js,ts,jsx,tsx}",
         "./pages/**/*.{js,ts,jsx,tsx}",
@@ -91,7 +91,7 @@ Follow the steps below to scaffold a basic `Next.js v13` application, add & conf
 
 14. In your `tailwind.config.js`, set the dark mode property to `class`:
 
-    ```json
+    ```tsx
     module.exports = {
       darkMode: 'class'
     }
