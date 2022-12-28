@@ -148,7 +148,6 @@ Follow the steps below to scaffold a basic `Next.js v13` application, add & conf
         const [ mounted, setMounted ] = useState(false)
         const { resolvedTheme, setTheme } = useTheme();
 
-        // useEffect only runs on the client, so now we can safely show the UI
         useEffect(() => {
             setMounted(true)
         }, [])
