@@ -2,6 +2,7 @@
 import { useTheme } from 'next-themes'
 import { SunIcon } from '@heroicons/react/24/solid'
 import { MoonIcon } from '@heroicons/react/24/solid'
+import { EllipsisHorizontalIcon } from '@heroicons/react/24/solid'
 import { useEffect, useState } from 'react'
 
 const ThemeButton = () => {
@@ -9,11 +10,15 @@ const ThemeButton = () => {
     const { resolvedTheme, setTheme } = useTheme();
 
     useEffect(() => {
-        setMounted(true)
+        setMounted(true);
     }, [])
 
     if (!mounted) {
-        return null
+        return (
+            <div className="flex items-center justify-center p-4">
+                <EllipsisHorizontalIcon className="h-16 w-16 text-slate-500" />
+            </div>
+        )
     }
 
     return (
